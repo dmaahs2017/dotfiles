@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+prog_name=$(basename $0)
+
+usage="\
+
+  Description: Runs a specified set of glue tests. 
+      Must be run from the bind-etl directory.
+  Usage: $prog_name <test_name>
+  Parameters:
+    <test_name>    The name of the test to run
+  Example: $prog_name pharmacy_claim_extract
+"
+
+current_dir=$(pwd)
+test=$1
+
+
+if test -z "$test" || [[ $(basename $current_dir) != "bind-etl" ]]
+then
+  echo "$usage"
+  exit 1
+fi
+
+docker run -t --rm --mount type=bind,source="$current_dir/data-engineering",target=/data-engineering -w="//data-engineering/$test" --env PYTHONPATH=//home/aws-glue-libs/awsglue.zip://home/spark-2.4.3-bin-spark-2.4.3-bin-bin-hadoop2.8/python/lib/py4j-0.10.7-src.zip://home/spark-2.4.3-bin-spark-2.4.3-bin-hadoop2.8/python://glue/common://glue/common/libs://data-engineering/common/://data-engineering/_testing/ --entrypoint //home/aws-glue-libs/bin/gluepytest bind-glue -k "$test"_test

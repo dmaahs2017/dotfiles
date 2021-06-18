@@ -1,0 +1,5 @@
+host=$1
+pswd=$2
+
+ssh $1
+while [ $? -ne 0 ]; do !!; done
