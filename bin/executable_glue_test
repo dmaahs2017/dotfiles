@@ -22,4 +22,4 @@ then
   exit 1
 fi
 
-docker run -t --rm --mount type=bind,source="$current_dir/data-engineering",target=/data-engineering -w="//data-engineering/$test" --env PYTHONPATH=//home/aws-glue-libs/awsglue.zip://home/spark-2.4.3-bin-spark-2.4.3-bin-bin-hadoop2.8/python/lib/py4j-0.10.7-src.zip://home/spark-2.4.3-bin-spark-2.4.3-bin-hadoop2.8/python://glue/common://glue/common/libs://data-engineering/common/://data-engineering/_testing/ --entrypoint //home/aws-glue-libs/bin/gluepytest bind-glue -k "$test"_test
+docker run -t --rm --mount type=bind,source="$current_dir/data-engineering",target=/data-engineering -w="//data-engineering/$test" --env PYTHONPATH=//home/aws-glue-libs/awsglue.zip://home/spark-2.4.3-bin-spark-2.4.3-bin-bin-hadoop2.8/python/lib/py4j-0.10.7-src.zip://home/spark-2.4.3-bin-spark-2.4.3-bin-hadoop2.8/python://glue/common://glue/common/libs://data-engineering/common/://data-engineering/_testing/ --entrypoint //home/aws-glue-libs/bin/gluepytest bind-glue -k "$test"
