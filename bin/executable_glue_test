@@ -16,7 +16,8 @@ current_dir=$(pwd)
 test=$1
 
 
-if test -z "$test" || [[ $(basename $current_dir) != "bind-etl" ]]
+# if test -z "$test" || [[ $(basename $current_dir) != "bind-etl" ]]
+if [[ $(basename $current_dir) != "bind-etl" ]]
 then
   echo "$usage"
   exit 1
