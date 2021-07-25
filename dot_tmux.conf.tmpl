@@ -1,5 +1,10 @@
 set -g mouse on
 
+# modern colors
+set -g default-terminal "screen-256color"
+set -ga terminal-overrides ",xterm-256color:Tc"
+
+
 # vim-like pane resizing  
 bind -r C-k resize-pane -U
 bind -r C-j resize-pane -D
