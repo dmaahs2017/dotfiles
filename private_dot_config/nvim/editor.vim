@@ -21,6 +21,9 @@ set ignorecase
 set smartcase
 set gdefault
 
+" disable folding
+set nofoldenable
+
 " MISC
 set encoding=utf-8
 set scrolloff=2

@@ -13,9 +13,12 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# BIND Exports
+export BIND_ETL_DIR="$HOME/dev/bind-etl"
+
 # Other Exports
 export FZF_BASE="/usr/local/bin/fzf"
-export EDITOR='vim'
+export EDITOR='nvim'
 export TERM="xterm-256color"
 export MD_NOTEBOOKS_DIR="$HOME/dev/md-notebooks"
 export ZSH_ALIAS_FINDER_AUTOMATIC=true
