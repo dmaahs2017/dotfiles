@@ -41,5 +41,10 @@ nnoremap ? ?\v
 nnoremap / /\v
 cnoremap %s/ %sm/
 
+" Copy file path to unamed buffer
+nnoremap <leader>cp :let @+ = expand("%")<cr>
+
+
+
 " Other
 nnoremap <leader>r :checktime <CR>
