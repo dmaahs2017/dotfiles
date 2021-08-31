@@ -1,3 +1,5 @@
+# directory aliases
+alias playdir="$HOME/dev/playground"
 # bind aliases
 alias ptadir="$HOME/dev/bind/bind-performance-tests/"
 alias ftadir="$HOME/dev/bind/bind-fta"
