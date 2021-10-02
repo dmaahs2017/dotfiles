@@ -5,6 +5,7 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin' 
 Plug 'preservim/nerdcommenter'
+Plug 'tmsvg/pear-tree'
 
 " GUI enhancements
 Plug 'itchyny/lightline.vim'
@@ -103,3 +104,15 @@ let g:table_mode_corner='|'
 " # End Table Mode Configs
 " =======================================
 
+" =======================================
+" # Start Pear Tree Configs
+" =======================================
+
+let b:pear_tree_smart_openers = 1
+let g:pear_tree_smart_closers = 1
+let g:pear_tree_smart_backspace = 1
+let pear_tree_ft_disabled = []
+
+" =======================================
+" # End Pear Tree Configs
+" =======================================
