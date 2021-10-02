@@ -33,6 +33,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Other
 " Plug 'christoomey/vim-tmux-navigator'
+Plug 'dhruvasagar/vim-table-mode'
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 call plug#end()
@@ -91,3 +92,14 @@ highlight CocInfoFloat ctermfg=yellow
 " =======================================
 " # END COC Configs
 " =======================================
+
+" =======================================
+" # Start Table Mode Configs
+" =======================================
+
+let g:table_mode_corner='|'
+
+" =======================================
+" # End Table Mode Configs
+" =======================================
+
