@@ -35,6 +35,7 @@ alias gbdm="git-branch-delete-menu.sh"
 alias gspu="git stash push"
 alias gspo="git stash pop"
 alias gpull="git pull"
+unalias gswm
 # other aliases
 alias py="python3"
 alias ipy="ipython"

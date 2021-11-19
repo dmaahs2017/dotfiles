@@ -37,7 +37,7 @@ noremap H ^
 noremap L $
 
 " Very magic search by default. (Normal Regex)
-nnoremap ? ?\v
+nnoremap ? ?\
 nnoremap / /\v
 cnoremap %s/ %sm/
 
